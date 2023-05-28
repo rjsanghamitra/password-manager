@@ -11,7 +11,7 @@ import (
 
 func main() {
 	var username, mpwd string
-	if len(os.Args) == 1 {
+	if len(os.Args) == 1 {	// if there is only 1 argument, it is the binary name. this implies that the user is creating a new account.
 		fmt.Println("Enter your username:")
 		var name string
 		fmt.Scan(&name)
@@ -22,12 +22,12 @@ func main() {
 		// creating a new account for the user.
 		new.Create(name, pwd)
 
-	} else if len(os.Args) == 3 {
+	} else if len(os.Args) >= 3 {	// the 2nd argument is the username and the 3rd argument is the master password. any other extra arguments are ignored.
 		username = os.Args[1]
 		mpwd = os.Args[2]
 		// logging in.
 		login.Login(username, mpwd)
-	}
+	} 
 	fmt.Println("Enter the operation you want to perform:")
 	fmt.Println("1. Add new password item.")
 	fmt.Println("2. Retrieve a password item from the database.")
