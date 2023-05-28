@@ -23,5 +23,5 @@ func Create(name string, pwd string) {
 	defer file.Close()
 	file.WriteString(dbname + "\n")
 
-	fmt.Println("Account created!")
+	fmt.Print("Account created.\n\n")
 }

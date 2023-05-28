@@ -48,7 +48,7 @@ func Login(name string, pwd string) {
 		log.Println("The entered username and password don't exist. Please enter the correct username and password.")
 		os.Exit(1)
 	}
-	fmt.Print("\n\nLogged in.\n\n")
+	fmt.Print("Logged in.\n\n")
 }
 
 func AddNewItem(site string, username string, pwd string) {
