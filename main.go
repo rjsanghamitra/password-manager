@@ -27,8 +27,7 @@ func main() {
 		mpwd = os.Args[2]
 		// logging in.
 		login.Login(username, mpwd)
-	} 
-	fmt.Println("Enter the operation you want to perform:")
+		fmt.Println("Enter the operation you want to perform:")
 	fmt.Println("1. Add new password item.")
 	fmt.Println("2. Retrieve a password item from the database.")
 	fmt.Println("3. Delete a password item.")
@@ -105,4 +104,5 @@ func main() {
 		log.Println("Invalid Option")
 		os.Exit(1)
 	}
+	} 
 }
