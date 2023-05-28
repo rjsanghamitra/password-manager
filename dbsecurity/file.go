@@ -36,10 +36,10 @@ func Decrypt(encrypted string, key string) string {
 	return string(decryptedBytes)
 }
 
-func RandomPasswordGenerator() (pwd string) {
+func RandomPasswordGenerator(n int) (pwd string) {
 	// the character set from which the characters that will be there in the password will be selected.
 	charset := []byte("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890@#$%&*")
-	b := make([]byte, 14)
+	b := make([]byte, n)
 	for i := range b {
 		b[i] = charset[mrand.Intn(len(charset))]
 	}

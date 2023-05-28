@@ -56,7 +56,10 @@ func main() {
 			var r int
 			fmt.Scan(&r)
 			if r == 1 {
-				pwd = dbsecurity.RandomPasswordGenerator()
+				fmt.Println("What do you want the length of the password to be?")
+				var l int
+				fmt.Scan(&l)
+				pwd = dbsecurity.RandomPasswordGenerator(l)
 			} else {
 				fmt.Println("Enter the password:")
 				fmt.Scan(&pwd)
@@ -94,7 +97,10 @@ func main() {
 			var r int
 			fmt.Scan(&r)
 			if r == 1 {
-				pwd = dbsecurity.RandomPasswordGenerator()
+				fmt.Println("What do you want the length of the new password to be?")
+				var l int
+				fmt.Scan(&l)
+				pwd = dbsecurity.RandomPasswordGenerator(l)
 			} else {
 				fmt.Println("Enter the password:")
 				fmt.Scan(&pwd)
