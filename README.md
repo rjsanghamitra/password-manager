@@ -8,4 +8,4 @@ The passwords are stored in the same directory in a database. The data in the da
 2. Run the following command to create the binary.
 `go install pwdmgr`
 3. Run the following command to use the password manager.
-`pwdmgr'
+`pwdmgr`
