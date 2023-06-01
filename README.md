@@ -9,4 +9,5 @@ The passwords are stored in the same directory in a database. The data in the da
 `go install pwdmgr`
 3. Run the following command to use the password manager.
 `pwdmgr <username> <master password>`
+
 If the user has to create a new account, the binary can be called without any arguments.
